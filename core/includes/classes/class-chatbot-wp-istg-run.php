@@ -72,9 +72,12 @@ class Chatbot_Wp_Istg_Run{
 	public function enqueue_backend_scripts_and_styles() {
 
 		wp_enqueue_style( 'chatbotwp-backend-styles', CHATBOTWP_PLUGIN_URL . 'core/includes/assets/css/backend-styles.css', array(), CHATBOTWP_VERSION, 'all' );
-
+		//set image
+		$chatbotwp_icon = CHATBOTWP_PLUGIN_URL . 'core/includes/assets/img/logo.png';
+		
 		wp_localize_script( 'chatbotwp-backend-scripts', 'chatbotwp', array(
 			'plugin_name'   	=> __( CHATBOTWP_NAME, 'chatbot-wp-istg' ),
+			'icon_url'		=> $chatbotwp_icon,
 		));
 	}
 

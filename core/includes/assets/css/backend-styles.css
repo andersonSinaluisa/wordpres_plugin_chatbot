@@ -185,7 +185,9 @@ body {
 .boton {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-image: url(../img/logo.jpeg);
+  background-size: cover;
+  object-fit: cover;
   color: #fff;
   text-decoration: none;
   border-radius: 50%;
